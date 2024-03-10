@@ -6,7 +6,7 @@
 }
 
 body {
-    background: linear-gradient(180deg, #594cee 0%, #8dd0f5 100%);
+    background: linear-gradient(180deg, #e2e2e6 0%, #8dd0f5 100%);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -18,7 +18,7 @@ body {
 }
 
 .container {
-    background-color: #5c54ed;
+    background-color: #453ddb;
     box-shadow: rgba(0, 0, 0, .24) 0px 3px 8px;
     padding: 2rem;
     color: #fdfdfd;
@@ -52,26 +52,55 @@ body {
     cursor: pointer;
 }
 
-/* Clima */
-.weather-data {
+/* Informações do clima */
+#weather-data {
     border-top: 1px solid #fff;
     margin-top: 1.5rem;
     padding-top: 1.5rem;
     text-align: center;
 }
 
-.weather-data h2 {
+#weather-data h2 {
     display: flex;
     justify-content: center;
     align-items: center;
     margin-bottom: 0.6rem;
 }
 
-.weather-data h2 i {
+#weather-data h2 i {
     font-size: 1rem;
 }
 
-.weather-data span {
+#weather-data span {
     margin: 0.6rem;
+}
+
+#country {
+    height: 30px;
+}
+
+#description-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0.6rem 0;
+}
+
+#description {
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+#details-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid #fff;
+}
+
+#details-container #humidity {
+    border-right: 1px solid #fff;
+    margin: 0.6rem;
+    padding: 0.6rem;
 }
 
