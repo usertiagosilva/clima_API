@@ -6,11 +6,13 @@
 }
 
 body {
-    background: linear-gradient(180deg, #e2e2e6 0%, #8dd0f5 100%);
+    background-image: url("https://source.unsplash.com/2000x900/?landscape");
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
+   
+    
 }
 
 .hide {
@@ -18,11 +20,12 @@ body {
 }
 
 .container {
-    background-color: #453ddb;
+    background-color: #000;
     box-shadow: rgba(0, 0, 0, .24) 0px 3px 8px;
     padding: 2rem;
     color: #fdfdfd;
     border-radius: 1rem;
+    opacity: 0.9;
 }
 
 /* Formulário */
@@ -75,10 +78,6 @@ body {
     margin: 0.6rem;
 }
 
-#country {
-    height: 30px;
-}
-
 #description-container {
     display: flex;
     justify-content: center;
@@ -98,9 +97,21 @@ body {
     border-top: 1px solid #fff;
 }
 
+
+#details-container #temp-min {
+    margin: 0.6rem;
+    padding: 0.8rem;
+}
+
+#perception-weather {
+    margin: 0.6rem;
+    padding: 0.8rem;
+}
+
 #details-container #humidity {
     border-right: 1px solid #fff;
     margin: 0.6rem;
-    padding: 0.6rem;
+    padding: 0.8rem;
 }
+
 

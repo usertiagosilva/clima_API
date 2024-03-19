@@ -12,6 +12,9 @@ const weatherIconElement = document.querySelector("#weather-icon");
 const countryElement = document.querySelector("#country");
 const humidityElement = document.querySelector("#humidity span");
 const windElement = document.querySelector("#wind span");
+const minElement = document.querySelector("#temp-min span");
+const maxElement = document.querySelector("#temp-max span");
+const perceptionElement = document.querySelector("#perception-weather span");
 const weatherElement = document.querySelector("#weather-data");
 
 
@@ -35,6 +38,9 @@ const showWeatherData = async (city) => {
     countryElement.setAttribute("src", apiCountryURL + data.sys.country);
     humidityElement.innerText = `${data.main.humidity}%`;
     windElement.innerText = `${data.wind.speed}km/h`;
+    minElement.innerText = parseInt(data.main.temp_min);
+    maxElement.innerText = parseInt(data.main.temp_max);
+    perceptionElement.innerText = parseInt(data.main.feels_like);
     weatherElement.classList.remove("hide");
 };
 
