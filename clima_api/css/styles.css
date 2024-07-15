@@ -6,13 +6,11 @@
 }
 
 body {
-    background-image: url("https://source.unsplash.com/2000x900/?landscape");
+    background: linear-gradient(to bottom, rgb(0, 89, 255), rgb(0, 128, 117));
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-   
-    
+    height: 100vh;  
 }
 
 .hide {
